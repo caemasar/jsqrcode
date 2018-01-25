@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="txt/html;charset=utf-8" />
+<title>javascript解码读取二维码信息</title>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript" src="js/component/grid.js"></script>
+<script type="text/javascript" src="js/component/version.js"></script>
+<script type="text/javascript" src="js/component/detector.js"></script>
+<script type="text/javascript" src="js/component/formatinf.js"></script>
+<script type="text/javascript" src="js/component/errorlevel.js"></script>
+<script type="text/javascript" src="js/component/bitmat.js"></script>
+<script type="text/javascript" src="js/component/datablock.js"></script>
+<script type="text/javascript" src="js/component/bmparser.js"></script>
+<script type="text/javascript" src="js/component/datamask.js"></script>
+<script type="text/javascript" src="js/component/rsdecoder.js"></script>
+<script type="text/javascript" src="js/component/gf256poly.js"></script>
+<script type="text/javascript" src="js/component/gf256.js"></script>
+<script type="text/javascript" src="js/component/decoder.js"></script>
+<script type="text/javascript" src="js/component/qrcode.js"></script>
+<script type="text/javascript" src="js/component/findpat.js"></script>
+<script type="text/javascript" src="js/component/alignpat.js"></script>
+<script type="text/javascript" src="js/component/databr.js"></script>
+
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body onload="load()">
+	<div>
+		<div>将二维码图片拖放到下面的黑色框框内解码获取信息</div>
+		<div>
+			<div style="display: inline-block;">
+				<canvas id="qr-canvas" width="100" height="480" style="border: solid 1px #000"></canvas>
+			</div>
+			<div style="display: inline-block;">
+				<textarea id="result1" rows='32' cols='30'></textarea>
+			</div>
+			<div style="display: inline-block;">
+				<textarea id="result2" rows='32' cols='30'></textarea>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
